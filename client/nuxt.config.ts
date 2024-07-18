@@ -5,5 +5,11 @@ export default defineNuxtConfig({
 
   devServer: {
     host: 'api.test'
+  },
+
+  modules: ["nuxt-auth-sanctum"],
+
+  sanctum: {
+    baseUrl: 'http://api.test',
   }
 })
