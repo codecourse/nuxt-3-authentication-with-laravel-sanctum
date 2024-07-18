@@ -14,6 +14,8 @@ export default defineNuxtConfig({
     baseUrl: 'http://api.test',
     redirect: {
       onLogin: '/dashboard',
+      onAuthOnly: '/auth/login',
+      onGuestOnly: '/dashboard'
     }
   },
 
