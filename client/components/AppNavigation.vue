@@ -24,6 +24,7 @@ const logout = async () => {
       <div class="font-semibold">
         {{ user?.name }}
       </div>
+      <NuxtLink to="/account">Account</NuxtLink>
       <button v-on:click="logout">
         Sign out
       </button>

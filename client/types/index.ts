@@ -10,6 +10,11 @@ declare global {
         password: string;
     }
 
+    interface ProfileForm {
+        name: string;
+        email: string;
+    }
+
     interface User {
         id: number;
         name: string;
