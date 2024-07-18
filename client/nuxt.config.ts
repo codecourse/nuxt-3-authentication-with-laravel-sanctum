@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   sanctum: {
     baseUrl: 'http://api.test',
     redirect: {
-      onLogin: '/dashboard'
+      onLogin: '/dashboard',
     }
   },
 
