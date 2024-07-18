@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
+  css: ["assets/css/app.css"],
 
   devServer: {
     host: 'api.test'
@@ -11,5 +12,12 @@ export default defineNuxtConfig({
 
   sanctum: {
     baseUrl: 'http://api.test',
-  }
+  },
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 })
