@@ -1,4 +1,8 @@
 declare global {
+    interface ValidationErrors {
+        [key: string]: string[]
+    }
+
     interface LoginForm {
         email: string;
         password: string;
