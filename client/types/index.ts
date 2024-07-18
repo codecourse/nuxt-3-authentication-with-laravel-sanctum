@@ -4,6 +4,12 @@ declare global {
         password: string;
     }
 
+    interface RegisterForm {
+        name: string;
+        email: string;
+        password: string;
+    }
+
     interface User {
         id: number;
         name: string;
